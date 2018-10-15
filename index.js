@@ -84,7 +84,7 @@ function startListening() {
         var recordLabel = $newRecordLabelInput.val();
         var recordValue;
         try {
-            recordValue = JSON.parse($newRecordValueInput.val());
+            recordValue = JSON.parse(newRecordValueEditor.getValue());
         }
         catch (err) {
             console.error('Failed to parse the json for the new record: ', err);
